@@ -7,6 +7,8 @@
   },
   "plugins": ["prettier"],
   "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "react/self-closing-comp": "error",
     "react/no-unsued-state": 0,
     "no-empty-character-class": "off",
     "react/prop-types": 0,
