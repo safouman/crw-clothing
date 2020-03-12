@@ -44,6 +44,14 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscirbe = auth.onAuthStateChanged(userAuth => {
+      unsubscirbe();
+      resolve(userAuth);
+    }, reject);
+  });
+};
 export const addCollectionAndDocuments = async (
   collectionKey,
   objectsToAdd
@@ -76,9 +84,9 @@ export const convertCollectionsSnapshotToMap = collections => {
     return accumulator;
   }, {});
 };
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({ prompt: 'select_account' });
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: 'select_account' });
 
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 export default firebase;
