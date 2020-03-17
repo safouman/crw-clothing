@@ -1,1 +1,6 @@
-{ "folders": [], "settings": {}, "editor.formatOnSave": true }
+{
+    "folders": [],
+    "settings": {},
+    "editor.formatOnSave": true,
+    "git.ignoreLimitWarning": true
+}
