@@ -1,4 +1,4 @@
-##crwn-clothing
+# crwn-clothing
 
 This project is using a CRA with Hooks, Redux, Redux Sagas for handling async requests, Firebase for storing data and users.
 
