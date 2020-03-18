@@ -9,12 +9,11 @@ Stripe for payment on an Express Server
 
 In the project directory, you can run:
 
-## `npm run dev` to start the server and the client.
+`npm run dev` to start the server and the client.
 
-## `npm run client` to start the client.
+`npm run client` to start the client.
 
-## `npm run server` to start the server and the backend server with nodemon.
+`npm run server` to start the server and the backend server with nodemon.
 
-
-## In Production the stripe server will serve the frontend build.
+ In Production the stripe server will serve the frontend build.
 
