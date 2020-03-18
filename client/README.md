@@ -1,3 +1,16 @@
+##crwn-clothing
+
+This project is using a CRA with Hooks, Redux, Redux Sagas for handling async requests, Firebase for storing data and users.
+
+For Styling, StyledComponents
+
+Stripe for payment on an Express Server
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
