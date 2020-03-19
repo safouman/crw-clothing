@@ -2,5 +2,7 @@
     "folders": [],
     "settings": {},
     "editor.formatOnSave": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
