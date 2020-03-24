@@ -10,6 +10,7 @@ import { GlobalStyle } from './global.styles';
 import Spinner from './components/spinner/spinner.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
 
+const ContactPage = lazy(() => import('./pages/contact/contact.component'));
 const HomePage = lazy(() => import('./pages/homepage/homepage.component'));
 const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const SignInAndSignOut = lazy(() =>
@@ -34,6 +35,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
             <Route path="/shop" component={ShopPage} />
             <Route exact path="/checkout" component={CheckoutPage} />
+            <Route exact path="/contact" component={ContactPage} />
             <Route
               exact
               path="/signin"
